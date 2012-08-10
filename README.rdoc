@@ -3,7 +3,7 @@ RADIO PONTE EN ONDA
 
 Descripcion : 
 
-La radio "PONTE EN ONDA" por mes de aniversario quiere regalar a todos sus oyentes jóvenes, por tal motivo, visitara cada zona del Lima metropolitana en una CARAVANA. Para esto la empresa creara una aplicativo para que sus seguidores, que son en su mayoría jóvenes, puedan recibir  el lugar y la hora exacta que harán su presentación y entrega de regalos.     
+Radio Ponte Onda no cuenta con un sistema de orientación geografica que oriente a sus simpatizantes sobre la ubicacion de su caravanas de premios a traves de las redes sociales.    
         
 User Story
 

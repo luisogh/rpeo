@@ -27,11 +27,9 @@ URL:  https://docs.google.com/presentation/d/1YqLfOnm8htko1ay_cvMS1b7gju6NBMSQaj
 
 GITHUB  
 
-<<<<<<< HEAD
-URL:  https://github.com/luisogh/rpeo
+
 =======
 URL:  https://github.com/luisogh/rpeo.git
->>>>>>> 01d5227a633855796d89bbf810032e254a6e9c4d
 
 HEROKU 
 

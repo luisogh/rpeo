@@ -3,7 +3,7 @@ RADIO PONTE EN ONDA
 
 Descripcion : 
 
-Radio Ponte Onda no cuenta con un sistema de orientación geografica que oriente a sus simpatizantes sobre la ubicacion de su caravanas de premios a traves de las redes sociales.    
+Radio Ponte Onda no cuenta con un sistema de orientación geográfica que oriente a sus simpatizantes sobre la ubicación de su caravanas de premios a traves de las redes sociales.    
         
 User Story
 

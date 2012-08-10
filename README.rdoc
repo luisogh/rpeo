@@ -34,15 +34,15 @@ Criterios de aceptacion
 
 Mockups
 
-URL: docs.google.com/presentation/d/1LJo22Gsk2dojuunEo1Vz5NmTiImyPz-8LeiAcSB7I_I/edit
+URL: http://docs.google.com/presentation/d/1LJo22Gsk2dojuunEo1Vz5NmTiImyPz-8LeiAcSB7I_I/edit
 
 Lean Canvas
 
-URL: docs.google.com/presentation/d/1YqLfOnm8htko1ay_cvMS1b7gju6NBMSQajMYeHlFseM/edit
+URL: http://docs.google.com/presentation/d/1YqLfOnm8htko1ay_cvMS1b7gju6NBMSQajMYeHlFseM/edit
 
 GITHUB
 
-URL: github.com/luisogh/rpeo.git
+URL: http://github.com/luisogh/rpeo.git
 
 HEROKU
 

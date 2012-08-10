@@ -1,5 +1,5 @@
 Taller de Entorno de Desarrollo Web
-====================================
+===================================
 
 Integrantes:
 
@@ -9,42 +9,42 @@ Integrantes:
 
 - Valerio, Pedro
 
+Proyecto: RADIO PONTE EN ONDA
+=============================
 
+Descripcion :
 
+Radio Ponte Onda no cuenta con un sistema de orientación geográfica que oriente a sus simpatizantes sobre la ubicación de su caravanas de premios a traves de las redes sociales.
 
-Proyecto: RADIO PONTE EN ONDA   
-=============================  
-
-Descripcion : 
-
-Radio Ponte Onda no cuenta con un sistema de orientación geográfica que oriente a sus simpatizantes sobre la ubicación de su caravanas de premios a traves de las redes sociales.    
-        
 User Story
 
-- Como "RADIO PONTE EN ONDA" deseo informar a los usuarios de twitter la ubicacion de las Caravanas de Premios. 
-- Como "Suscriptor" deseo estar informado sobre la ubicacion de las Caravanas de Premios. 
-- Como "Administrador" deseo que mi cuenta sea autentificada atravez del Twitter de la radio.     
+- Como “RADIO PONTE EN ONDA” deseo informar a los usuarios de twitter la ubicacion de las Caravanas de Premios.
+
+- Como “Suscriptor” deseo estar informado sobre la ubicacion de las Caravanas de Premios.
+
+- Como “Administrador” deseo que mi cuenta sea autentificada atravez del Twitter de la radio.
 
 Criterios de aceptacion
 
 - El administrador sera capaz de iniciar sesion al sistema con su cuenta de Twitter
-- El administrador sera capaz de registrar las caravanas 
-- El administrador sera capaz de selecionar la caravana y enviarla via a todos sus seguidores via Twiter con un solo boton  
 
-Mockups   
+- El administrador sera capaz de registrar las caravanas
 
-URL:  https://docs.google.com/presentation/d/1LJo22Gsk2dojuunEo1Vz5NmTiImyPz-8LeiAcSB7I_I/edit      
-        
-Lean Canvas 
+- El administrador sera capaz de selecionar la caravana y enviarla via a todos sus seguidores via Twiter con un solo boton
 
-URL:  https://docs.google.com/presentation/d/1YqLfOnm8htko1ay_cvMS1b7gju6NBMSQajMYeHlFseM/edit      
+Mockups
 
-GITHUB  
+URL: docs.google.com/presentation/d/1LJo22Gsk2dojuunEo1Vz5NmTiImyPz-8LeiAcSB7I_I/edit
 
+Lean Canvas
 
-=======
-URL:  https://github.com/luisogh/rpeo.git
+URL: docs.google.com/presentation/d/1YqLfOnm8htko1ay_cvMS1b7gju6NBMSQajMYeHlFseM/edit
 
-HEROKU 
+GITHUB
 
-URL:  http://rpeo.herokuapp.com/
+URL: github.com/luisogh/rpeo.git
+
+HEROKU
+
+URL: rpeo.herokuapp.com/
+

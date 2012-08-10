@@ -2,11 +2,14 @@ Rpeo::Application.routes.draw do
 
   resources :characters
 
+#get "caravanas/index"
+  #root :to =>'caravanas#index'
+
 #get "characters/index"
   #root :to =>'characters#index'
 get "caravanas/index"
-  root :to =>'caravanas#index'
-
+  #root :to =>'caravanas#index'
+root :to => 'characters#home'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -69,6 +72,8 @@ get "caravanas/index"
   #match '/characters/envio/:id', :to => 'characters#senvio' 
 
   match "/characters/:id/envio", :to => "characters#envio"
+
+  match "/caravanas/grupo", :to => "caravanas#grupo"
 
   #match "/characters" => "characters#index", :as => :character
   #match "/characters" => "sessions#character", :as => :character

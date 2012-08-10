@@ -55,7 +55,7 @@
 <div id="body">
     <div class="header_bg">
         <div class="wrapper">
-         <div class="fl" style="margin-top:-31px; margin-left:0px;"><img src="assets/R5_logo.png" style="position:relative; z-index:99; top:60px;" alt="Job Management Software"/></div>
+         <div class="fl" style="margin-top:-31px; margin-left:0px;"></div>
             <div class="fr" style="margin-right:4px; margin-top:30px;">
                    <div class="fl text_header" style="font-size:13px;"><% if current_user %>
                         Bienvenido <%= current_user.name %>!&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
@@ -75,10 +75,38 @@
         </div>
     </div>  
 
-<h1>Crear Nueva Caravana</h1>
+<h1 style="color:#ffffff" >Crear Nueva Caravana</h1>
 
-<%= render 'form' %>
-<%= link_to 'Regresar', characters_path %>
+<%= form_for(@character) do |f| %>
+
+ <div class="field">
+    <%= f.label :Nombre %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :Lugar %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field" style="display:none">
+    <%= f.label :longitud %><br />
+    <%= f.text_field :longitude, :value => "" %>
+  </div>
+  <div class="field" style="display:none">
+    <%= f.label :latitud %><br />
+    <%= f.text_field :latitude, :value => "" %>
+  </div>
+  <div class="field" style="display:none">
+    <%= f.label :gmaps %><br />
+    <%= f.check_box :gmaps, :checked => false %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Crear Caravana" %>
+  </div>
+
+  <%= link_to 'Regresar', characters_path %>
+<% end %>
+
 <div class="cb" style="margin-top:10px;"></div>
 <div class="home2_footer">
     <div class="bottom_footer">
@@ -86,9 +114,9 @@
             <div class="fl">
                 <div class="fr">
                      <div class="fr footer_menu"></div><div class="fr sep" style="margin-top:5px"></div>
-                     <div class="fr footer_menu">Pedro</div><div class="fr sep" style="margin-top:5px">|</div>
-                     <div class="fr footer_menu">Luis Gago Hidalgo</div><div class="fr sep" style="margin-top:5px">|</div>
-                     <div class="fr footer_menu">Kenny</div>
+                     <div class="fr footer_menu"></div><div class="fr sep" style="margin-top:5px"></div>
+                     <div class="fr footer_menu"></div><div class="fr sep" style="margin-top:5px"></div>
+                     <div class="fr footer_menu"></div>
                 </div>
                 <div class="cb"></div>
                 <div class="fl" style="margin-top:8px">

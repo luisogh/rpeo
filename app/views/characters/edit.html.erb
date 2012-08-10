@@ -7,15 +7,15 @@
         <meta name="msvalidate.01" content="36FAFF855586B413BB6328AB827580DE" />
         <meta name="google-site-verification" content="yEEQ6HBf7jZHZ5BOt6tqDtXeWBluDfekLhkUBcaGIaE" />
             <title>Radio Ponte en Onda | Lo mejor de la musica de todo el mundo.</title>
-            <meta name="description" content="Getready5 is the best restoration management software and job management software which is very powerful and easy tools for any type of job management, barcode tracking, job scheduling and estimation can be done easily."/>     
+            <meta name="description" content="Getready5 is the best restoration management software and job management software which is very powerful and easy tools for any type of job management, barcode tracking, job scheduling and estimation can be done easily."/>  
         <meta name="keywords" content="job management software, insurance restoration software, insurance restoration contractor, restoration contractor software, electronics restoration, replacement cost, best restoration software, disaster restoration, water restoration, fire water damage, restoration management software, dispatch software, invoicing software, scheduling software, estimating software, field service software, service management software, barcode tracking, fire water damage restoration, job scheduling software, contents restoration, property claims, property claim, residential claim, commercial claim, job management, insurance restoration industry, contents restoration software, restoration software, job management system, service software, insurance claims, asset tracking barcode."/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <link href="/stylesheets/general.css?1340280233" media="screen" rel="stylesheet" type="text/css" />
 <link href="/stylesheets/jquery.cursorMessage.css?1340280233" media="screen" rel="stylesheet" type="text/css" />
 <link href="/stylesheets/jquery-ui-1.8.16.custom.css?1340280233" media="screen" rel="stylesheet" type="text/css" />
 <link href="/stylesheets/jquery.autocomplete.css?1340280233" media="screen" rel="stylesheet" type="text/css" />
 <link href="/stylesheets/jquery.lightbox-0.5.css?1340280233" media="screen" rel="stylesheet" type="text/css" />
-<link href="/stylesheets/ready.css?1340280233" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/ready.css?1340280233" media="screen" rel="stylesheet" type="text/css" />   
         <script src="/javascripts/jquery-1.4.2.min.js?1340280233" type="text/javascript"></script>
 <script src="/javascripts/application.js?1340280233" type="text/javascript"></script>
 <script src="/javascripts/jquery.cursorMessage.js?1340280233" type="text/javascript"></script>
@@ -48,72 +48,69 @@
   <%= csrf_meta_tags %>
 </head>
 <body style="background:#80BFFF">
-
 <div id="body">
     <div class="header_bg">
         <div class="wrapper">
          <div class="fl" style="margin-top:-31px; margin-left:0px;"></div>
             <div class="fr" style="margin-right:4px; margin-top:30px;">
-                 <div class="fl text_header" style="font-size:13px;"><% if current_user %>
+                  <div class="fl text_header" style="font-size:13px;"><% if current_user %>
                         Bienvenido <%= current_user.name %>!&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
                         <%= link_to "Sign Out", signout_path %>&nbsp;&nbsp;&nbsp;&nbsp;
                     <% else %>
                          <%= link_to "Sign in with Twitter", "/auth/twitter" %>
                     <% end %></div>
-                    <div class="fl text_header" style="color:#fff; font-size:17px; font-weight:normal">I</div>  
-            <div class="fl text_header" style="margin-left:5px; font-size:13px; margin-right:0px"></div> 
+                    <div class="fl text_header" style="color:#fff; font-size:17px; font-weight:normal">I</div>
+            <div class="fl text_header" style="margin-left:5px; font-size:13px; margin-right:0px"></div>
+            
             <div class="fr" style="margin-top:0px; margin-left:32px">
                 <img src="/assets/twitter.png" alt="twitter" />
             </div>              
+            
             </div>
             <div class="cb"></div>
             <div class="header_bot_bor"></div>
         </div>
     </div>  
 
-<h1 style="color:#ffffff" >Datos de la Caravana</h1>
+<h1 style="color:#ffffff" >Actualizar Caravana</h1>
 
-<div>
-<p id="notice"><%= notice %></p>
-</div>
 
-<div>
-<p style="COLOR: #FFFFFF">
-  <b style="color:#000000" >Nombre:</b>
-  <%= @character.name %>
-</p>
-</div>
 
-<div>
-<p style="COLOR: #FFFFFF">
-  <b style="color:#000000" >Lugar:</b>
-  <%= @character.address %>
-</p>
-</div>
+<%= form_for(@character) do |f| %>
 
-<div style="display:none">
-<p style="COLOR: #FFFFFF">
-  <b>Longitud:</b>
-  <%= @character.longitude %>
-</p>
-</div>
+ <div class="field">
+    <%= f.label :Nombre %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :Lugar %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field" style="display:none">
+    <%= f.label :longitud %><br />
+    <%= f.text_field :longitude, :value => "" %>
+  </div>
+  <div class="field" style="display:none">
+    <%= f.label :latitud %><br />
+    <%= f.text_field :latitude, :value => "" %>
+  </div>
+  <div class="field" style="display:none">
+    <%= f.label :gmaps %><br />
+    <%= f.check_box :gmaps, :checked => false %>
+  </div>
 
-<div style="display:none">
-<p style="COLOR: #FFFFFF">
-  <b>Latitud:</b>
-  <%= @character.latitude %>
-</p>
-</div>
+  <div class="actions">
+    <%= f.submit "Actualizar Caravana" %>
+  </div>
 
-<div style="display:none">
-<p style="COLOR: #FFFFFF">
-  <b>Gmaps:</b>
-  <%= @character.gmaps %>
-</p>
-</div>
 
-<%= link_to 'Actualizar', edit_character_path(@character) %> |
+<%= link_to 'Mostrar', @character %> |
 <%= link_to 'Regresar', characters_path %>
+<% end %>
+
+
+
+
 <div class="cb" style="margin-top:10px;"></div>
 <div class="home2_footer">
     <div class="bottom_footer">
@@ -127,6 +124,7 @@
                 </div>
                 <div class="cb"></div>
                 <div class="fl" style="margin-top:8px">
+
                 </div>
             </div>
             <div class="fr copy" style="color:#fff;">
@@ -137,6 +135,8 @@
         </div>
     </div>
 </div>
+
+
 </div>
 <script type="text/javascript">    
 function txt_focus(id,value){

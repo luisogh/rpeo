@@ -52,11 +52,12 @@
 <div id="body">
     <div class="header_bg">
         <div class="wrapper">
-         <div class="fl" style="margin-top:-31px; margin-left:0px;"><img src="assets/R5_logo.png" style="position:relative; z-index:99; top:60px;" alt="Job Management Software"/></div>
+         <div class="fl" style="margin-top:-31px; margin-left:0px;"></div>
             <div class="fr" style="margin-right:4px; margin-top:30px;">  
                     <div class="fl text_header" style="font-size:13px;"><% if current_user %>
                         Bienvenido <%= current_user.name %>!&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
-                        <%= link_to "Sign Out", signout_path %>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <%= link_to "Sign Out", signout_path %>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                        <%= link_to "Grupo", '/caravanas/grupo', method: :grupo  %>
                     <% else %>
                          <%= link_to "Sign in with Twitter", "/auth/twitter" %>
                     <% end %></div>
@@ -70,14 +71,11 @@
             <div class="header_bot_bor"></div>
         </div>
     </div>  
-<h1 style="color:#ffffff">Listado de Caravanas</h1>
-<table BGCOLOR="FFFFFF">
-  <tr  BGCOLOR="E3E0E0">
-    <th>Nombre</th>
-    <th>Lugar</th>
-    <th>Longitud</th>
-    <th>Latitud</th>
-    <th>Gmaps</th>
+<h1 style="color:#ffffff" align="center">Listado de Caravanas</h1>
+<table BGCOLOR="FFFFFF" align="center">
+  <tr  BGCOLOR="6C8BC0">
+    <th style="color:#ffffff" >Nombre</th>
+    <th style="color:#ffffff">Lugar</th>
     <th></th>
     <th></th>
     <th></th>
@@ -85,21 +83,20 @@
   </tr>
 <% @characters.each do |character| %>
   <tr>
-    <td><%= character.name %></td>
-    <td><%= character.address %></td>
-    <td><%= character.longitude %></td>
-    <td><%= character.latitude %></td>
-    <td><%= character.gmaps %></td>
-    <td><%= link_to 'Mostrar', character %></td>
-    <td><%= link_to 'Actualizar' %></td>
-    <td><%= link_to 'Eliminar', character, confirm: 'Esta seguro de eliminar la Caravana?', method: :delete %></td>
-    <td><%= link_to 'Enviar' %></td>
+    <td width="200" style="color:#6C8BC0" ><%= character.name %></td>
+    <td width="310" style="color:#6C8BC0" ><%= character.address %></td>
+    <td width="70" align="center" ><%= link_to 'Mostrar', character %></td>
+    <td width="70" align="center" ><%= link_to 'Actualizar', edit_character_path(character) %></td>
+    <td width="70" align="center" ><%= link_to 'Eliminar', character, confirm: 'Are you sure?', method: :delete %></td>
+    <td width="70" align="center" ><%= link_to 'Enviar', character_path(character)+'/envio', method: :envio %></td>
   </tr>
 <% end %>
 </table>
 <br />
-<%= link_to 'Crear Nueva Caravana', new_character_path %>
-<%= gmaps4rails(@json) %>
+<table align="center">
+<tr><td><%= link_to 'Crear Nueva Caravana', new_character_path %></td></tr>
+<tr><td><%= gmaps4rails(@json) %></td><tr>
+</table>
 <div class="cb" style="margin-top:10px;"></div>
 <div class="home2_footer">
     <div class="bottom_footer">
@@ -107,9 +104,9 @@
             <div class="fl">
                 <div class="fr">
                   <div class="fr footer_menu"></div><div class="fr sep" style="margin-top:5px"></div>
-                     <div class="fr footer_menu">Pedro</div><div class="fr sep" style="margin-top:5px">|</div>
-                     <div class="fr footer_menu">Luis Gago Hidalgo</div><div class="fr sep" style="margin-top:5px">|</div>
-                     <div class="fr footer_menu">Kenny</div>
+                     <div class="fr footer_menu"></div><div class="fr sep" style="margin-top:5px"></div>
+                     <div class="fr footer_menu"></div><div class="fr sep" style="margin-top:5px"></div>
+                     <div class="fr footer_menu"></div>
                 </div>
                 <div class="cb"></div>
                 <div class="fl" style="margin-top:8px">

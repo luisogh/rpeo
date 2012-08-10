@@ -6,9 +6,8 @@
         <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
         <meta name="msvalidate.01" content="36FAFF855586B413BB6328AB827580DE" />
         <meta name="google-site-verification" content="yEEQ6HBf7jZHZ5BOt6tqDtXeWBluDfekLhkUBcaGIaE" />
-        
             <title>Radio Ponte en Onda | Lo mejor de la musica de todo el mundo.</title>
-            <meta name="description" content="Getready5 is the best restoration management software and job management software which is very powerful and easy tools for any type of job management, barcode tracking, job scheduling and estimation can be done easily."/>  
+            <meta name="description" content="Getready5 is the best restoration management software and job management software which is very powerful and easy tools for any type of job management, barcode tracking, job scheduling and estimation can be done easily."/> 
         <meta name="keywords" content="job management software, insurance restoration software, insurance restoration contractor, restoration contractor software, electronics restoration, replacement cost, best restoration software, disaster restoration, water restoration, fire water damage, restoration management software, dispatch software, invoicing software, scheduling software, estimating software, field service software, service management software, barcode tracking, fire water damage restoration, job scheduling software, contents restoration, property claims, property claim, residential claim, commercial claim, job management, insurance restoration industry, contents restoration software, restoration software, job management system, service software, insurance claims, asset tracking barcode."/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <link href="/stylesheets/general.css?1340280233" media="screen" rel="stylesheet" type="text/css" />
@@ -16,7 +15,7 @@
 <link href="/stylesheets/jquery-ui-1.8.16.custom.css?1340280233" media="screen" rel="stylesheet" type="text/css" />
 <link href="/stylesheets/jquery.autocomplete.css?1340280233" media="screen" rel="stylesheet" type="text/css" />
 <link href="/stylesheets/jquery.lightbox-0.5.css?1340280233" media="screen" rel="stylesheet" type="text/css" />
-<link href="/stylesheets/ready.css?1340280233" media="screen" rel="stylesheet" type="text/css" /> 
+<link href="/stylesheets/ready.css?1340280233" media="screen" rel="stylesheet" type="text/css" />       
         <script src="/javascripts/jquery-1.4.2.min.js?1340280233" type="text/javascript"></script>
 <script src="/javascripts/application.js?1340280233" type="text/javascript"></script>
 <script src="/javascripts/jquery.cursorMessage.js?1340280233" type="text/javascript"></script>
@@ -54,73 +53,50 @@
     <div class="header_bg">
         <div class="wrapper">
          <div class="fl" style="margin-top:-31px; margin-left:0px;"></div>
-            <div class="fr" style="margin-right:4px; margin-top:30px;">
+            <div class="fr" style="margin-right:4px; margin-top:30px;">  
                     <div class="fl text_header" style="font-size:13px;"><% if current_user %>
                         Bienvenido <%= current_user.name %>!&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
                         <%= link_to "Sign Out", signout_path %>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
-                        <%= link_to "Caravanas", characters_path %>
+                        <%= link_to "Caravanas", characters_path %>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                        <%= link_to "Grupo", '/caravanas/grupo', method: :grupo  %>
                     <% else %>
                          <%= link_to "Sign in with Twitter", "/auth/twitter" %>
                     <% end %></div>
                     <div class="fl text_header" style="color:#fff; font-size:17px; font-weight:normal">I</div>
             <div class="fl text_header" style="margin-left:5px; font-size:13px; margin-right:0px"></div>
             <div class="fr" style="margin-top:0px; margin-left:32px">
-               <img src="/assets/twitter.png" alt="twitter" />
+                <img src="/assets/twitter.png" alt="twitter" />
             </div>              
-            
             </div>
             <div class="cb"></div>
             <div class="header_bot_bor"></div>
         </div>
     </div>  
-    <div class="wrapper">
-        <div class="job_mgmt">          
-            <div class="fl jmms">Lo mejor de la musica</div>
-            <div class="fl jmms_bor"></div>     
-            <div class="fl desc_txt">
-                Todo lo mejor del Rock, Pop, Salsa y Reggaeton lo encuentras en tu radio<br /> Ponte en Onda.
-            </div>
-        </div>       
-        <div class="cb"></div>                  
-        <div class="fl banner" style="margin-top:0px; margin-left:0px; position:relative;" id="img2">
-            <img src="/assets/radio2.jpg" alt="Radio Ponte En Onda" style="margin-right:10px"/>
-            <div class="fr">
-                <a href="/home/pricing" style="text-decoration:none;">
-                    <input type="submit" name="sign" value=" " class="sub_button_new"/>
-                </a>
-            </div>
-        </div>
-        <div class="cb"></div>
-        <div class="content_bg">
-            <div class="fl">
-                <div class="simple">
-                    Windows8
-                </div>
-                <div style="margin-top:10px; line-height:21px;">
-                    Descripcion
-                </div>
-                <div style="margin-top:10px;line-height:21px;vertical-align:middle;">
-                    <a href="https://play.google.com/store/apps/details?id=com.ready5" target="_blank"><img alt="Get it on Google Play" src="http://www.android.com/images/brand/get_it_on_play_logo_small.png" /></a>
-                    <a href="https://www.braintreegateway.com/merchants/3cmjtkg2txbbbwwn/verified" target="_blank"><img src="https://braintree-badges.s3.amazonaws.com/05.png" border="0"  alt="Ready5 Payment"/></a>
-                </div>
-    </div>
-            <div class="fl bord" style="margin-left:20px;margin-right:20px;"></div> 
-            <div class="simple" style="margin-left:0px;">Sistema de Caravanas </div>
-            <br/>
-            <div style="margin-top:-10px;line-height:21px; margin-left:30px;">
-                Descripcion
-            </div>
-          <div class="cb"></div>      
-        </div>       
-</div>
+<h1 style="color:#ffffff" align="center">Listado de Caravanas</h1>
+<table BGCOLOR="FFFFFF" align="center">
+  <tr  BGCOLOR="6C8BC0">
+    <th style="color:#ffffff" >Nombre</th>
+    <th style="color:#ffffff" >Lugar</th>
+  </tr>
+<% @characters.each do |character| %>
+  <tr>
+    <td width="340" style="color:#6C8BC0" ><%= character.name %></td>
+    <td width="450" style="color:#6C8BC0" ><%= character.address %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+<table align="center">
+<tr><td></td></tr>
+<tr><td><%= gmaps4rails(@json) %></td><tr>
+</table>
 <div class="cb" style="margin-top:10px;"></div>
- 
 <div class="home2_footer">
     <div class="bottom_footer">
         <div class="wrapper">
             <div class="fl">
                 <div class="fr">
-                     <div class="fr footer_menu"></div><div class="fr sep" style="margin-top:5px"></div>
+                  <div class="fr footer_menu"></div><div class="fr sep" style="margin-top:5px"></div>
                      <div class="fr footer_menu"></div><div class="fr sep" style="margin-top:5px"></div>
                      <div class="fr footer_menu"></div><div class="fr sep" style="margin-top:5px"></div>
                      <div class="fr footer_menu"></div>
@@ -168,7 +144,6 @@ function see()
       }
      }
 </script>
-  
     <script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
 NREUMQ.push(["load",new Date().getTime()]);
 var e=document.createElement("script");

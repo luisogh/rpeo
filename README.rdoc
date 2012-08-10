@@ -46,5 +46,5 @@ URL: github.com/luisogh/rpeo.git
 
 HEROKU
 
-URL: rpeo.herokuapp.com/
+URL: http://rpeonda.herokuapp.com/
 

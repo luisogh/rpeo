@@ -3,11 +3,11 @@ Taller de Entorno de Desarrollo Web
 
 Integrantes:
 
-De La Cruz Rupa, Kenny
+- De La Cruz Rupa, Kenny
 
-Gago Hidalgo, Luis
+- Gago Hidalgo, Luis
 
-Valerio, Pedro
+- Valerio, Pedro
 
 
 

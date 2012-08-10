@@ -88,13 +88,11 @@ class CharactersController < ApplicationController
 # GET /characters/1/envio
  def envio
     @character = Character.find(params[:id])
-
  end
 
  def home
     @characters = Character.all
     @json = Character.all.to_gmaps4rails
-
     respond_to do |format|
       format.html # home.html.erb
       format.json { render json: @characters }
@@ -102,11 +100,9 @@ class CharactersController < ApplicationController
   end
 
   def grupo
-    
    # respond_to do |format|
     #  format.html # new.html.erb
     #end
-
   end
 
 end

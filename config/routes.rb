@@ -2,9 +2,6 @@ Rpeo::Application.routes.draw do
 
   resources :characters
 
-#get "caravanas/index"
-  #root :to =>'caravanas#index'
-
 #get "characters/index"
   #root :to =>'characters#index'
 get "caravanas/index"

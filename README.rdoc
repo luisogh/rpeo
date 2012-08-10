@@ -27,8 +27,8 @@ URL:  https://docs.google.com/presentation/d/1YqLfOnm8htko1ay_cvMS1b7gju6NBMSQaj
 
 GITHUB  
 
-URL:  https://github.com/pvaleso/PremiosOnda
+URL:  https://github.com/luisogh/rpeo
 
 HEROKU 
 
-URL:  http://rpeo.herokuapp.com/    
+URL:  http://rpeo.herokuapp.com/

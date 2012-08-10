@@ -3,7 +3,7 @@ RADIO PONTE EN ONDA
 
 Descripcion : 
 
-La radio "PONTE EN ONDA" por mes de aniversario quiere regalar a todos sus oyentes jóvenes, por tal motivo, visitara cada zona del Lima metropolitana en una CARAVANA. Para esto la empresa creara una aplicativo para que sus seguidores, que son en su mayoría jóvenes, puedan recibir  el lugar y la hora exacta que harán su presentación y entrega de regalos.     
+Radio Ponte Onda no cuenta con un sistema de orientación geográfica que oriente a sus simpatizantes sobre la ubicación de su caravanas de premios a traves de las redes sociales.    
         
 User Story
 
@@ -27,7 +27,11 @@ URL:  https://docs.google.com/presentation/d/1YqLfOnm8htko1ay_cvMS1b7gju6NBMSQaj
 
 GITHUB  
 
+<<<<<<< HEAD
 URL:  https://github.com/luisogh/rpeo
+=======
+URL:  https://github.com/luisogh/rpeo.git
+>>>>>>> 01d5227a633855796d89bbf810032e254a6e9c4d
 
 HEROKU 
 

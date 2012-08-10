@@ -1,5 +1,17 @@
+Taller de Entorno de Desarrollo Web
+====================================
+
+Integrantes:
+
+De La Cruz Rupa, Kenny
+
+Gago Hidalgo, Luis
+
+Valerio, Pedro
+
+
 RADIO PONTE EN ONDA   
-===============   
+===================   
 
 Descripcion : 
 
